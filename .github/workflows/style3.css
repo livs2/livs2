@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  body {
+    background-color:#2ab9c4;
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: white;
+    width: 90%;
+    max-width: 1000px;
+  
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    height: 1000px;
+    box-shadow: 0 0 6px 2px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("caminh.png");
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: 700px 800px;  /* 80 pixels de largura e 60 pixels de altura */
+    background-size: 1000px;
+    
+  }
+
+
+  .titulo{
+    width: 60%;
+    max-width: 3000px;
+  
+    border-radius: 20px;
+    padding: 20px;
+    height: 200px;
+  
+    display: flex;
+    text-align:left;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+   
+  .text {
+
+    width: 90%;
+    max-width: 1500px;
+  
+    border-radius: 10px;
+    padding: 20px;
+    height: 100px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .questions-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .question {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .answers-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  
+  .answer:disabled {
+    cursor: not-allowed;
+  }
+  
+  .next-question {
+    margin-top: 32px;
+  }
+  
+  .button {
+    background-color: #1f4b66;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 6px;
+    height: 60px;
+    padding: 0 60px;
+    justify-content: center;
+    align-items: left;
+
+  
+    transition: filter 0.2s;
+  }
+  
+  .button:not(:disabled):hover {
+    filter: brightness(0.8);
+  }
+  
+  /* Finish game */
+  .final-message {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .final-message span {
+    display: block;
+    margin-top: 8px;
+  }
+  
+  /* General styles */
+  .hide {
+    display: none;
+  }
+  
+  .correct {
+    background-color: #049b48;
+  }
+  
+  .incorrect {
+    background-color: #a10101;
+  }
+
+  .caixa{
+    width: 90%;
+    max-width: 1200px;
+  
+    border-radius: 10px;
+   
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
