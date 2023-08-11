@@ -105,43 +105,51 @@ function finishGame() {
       Refazer teste
     </button>
     <button
-    onclick=history.back()
-    class="button"
-  >
-    Voltar ao menu principal 
-  </button>
-    
+      onclick=history.back()
+      class="button"
+    >
+      Voltar ao menu principal 
+    </button>
   `
+
+   
+
 }
 
 
 const questions = [
   {
-    question: "Qual é a capital do Brasil ?",
+    question: 'A Nestlé é a maior empresa de alimentos e bebidas do mundo',
     answers: [
-      { text: "São Paulo", correct: false },
-      { text: "Rio de Janeiro", correct: false },
-      { text: "Salvador", correct: false },
-      { text: "Brasília", correct: true }
+      { text: "Verdadeiro", correct: true },
+      { text: "Falso", correct: false }
     ]
   },
   {
-    question: "Qual a montanha mais alta do mundo?",
+    question: 'Quantos é 2 + 3 ?',
     answers: [
-      { text: "Monte Everest", correct: true },
-      { text: "Mauna Kea", correct: false },
-      { text: "Pico da Neblina", correct: false },
-      { text: "Dhaulagiri", correct: false }
+      { text: '6', correct: false },
+      { text: '5', correct: true },
+      { text: '4', correct: false },
+      { text: '7', correct: false }
     ]
   },
   {
-    question: "Quais são as fases da Lua ?",
+    question: 'Em que país foi construído o Muro de Berlim?',
     answers: [
-      { text: 'Nova, cheia, crescente e minguante', correct: true },
-      { text: 'Nova, cheia, crescente e superlua', correct: false },
-      { text: 'Nova, lunar parcial, crescente e minguante', correct: false },
-      { text: "Nenhuma das alternativas", correct: false }
+      { text: 'Brasil', correct: false },
+      { text: 'Alemanha', correct: true },
+      { text: 'Estados Unidos', correct: false },
+      { text: 'China', correct: false }
     ]
-  }
-  
+  },
+  {
+    question: 'Qual o satélite natural da Terra ?',
+    answers: [
+      { text: 'SCD-1', correct: false },
+      { text: 'Amazonia 1', correct: false },
+      { text: 'Sol', correct: false },
+      { text: 'Lua', correct: true },
+    ]
+  },
 ]
